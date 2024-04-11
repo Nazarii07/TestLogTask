@@ -1,0 +1,52 @@
+.main-container {
+    padding: 20px;
+  }
+  
+  .title {
+    color: white
+  }
+  
+  .toggle-button {
+    margin-bottom: 15px;
+    background-color: #2a9d8f;
+    border: none;
+    padding: 5px 10px;
+    color: rgb(3, 2, 2);
+    border-radius: 10px;
+    cursor: pointer
+  }
+  
+  .log-container {
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: 1px solid aqua;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .log-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .item-number {
+    font-size: 22px;
+    color: rgb(169, 166, 162);
+    margin-right: 10px;
+  }
+  
+  .log-item {
+    margin-top: 20px;
+    color: white;
+    word-break: break-word;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  

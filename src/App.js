@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
+import { useDispatch } from 'react-redux';
 import './App.css';
+import LogViewerComponent from './pages/LogViewerComponent';
+import { useEffect } from 'react';
+// import { fetchLogs } from './api/longViewer';
 
 function App() {
+  const dispatch = useDispatch();
+
+  // Dispatch an action to fetch logs when the component mounts
+  useEffect(() => {
+    // dispatch(fetchLogs());
+  }, [dispatch]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LogViewerComponent />
     </div>
   );
 }
