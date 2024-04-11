@@ -11,12 +11,9 @@ import Accordion from "../../components/accordion";
 const LogViewerComponent = () => {
   const dispatch = useDispatch();
   const logs = useSelector(getLogsSelector);
-  console.log("logs", logs);
   const isLogsLoading = useSelector(getLogsLoadingSelector);
   const logContainerRef = useRef(null);
   const [autoScroll, setAutoScroll] = useState(true);
-
-  console.log("isLogsLoading", isLogsLoading);
 
   useEffect(() => {
     dispatch(sendLogMessage({ message: "Hello Server!" }));
